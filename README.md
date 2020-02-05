@@ -1,3 +1,5 @@
+#Calcul bonbon
+
 argent = input()
 prixBonbon = input()
 quantiteBonbon = 0
