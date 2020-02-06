@@ -12,6 +12,8 @@ Si argentDispo > 0 et prixBonbon > 0
       totalDépensé <- totalDépensé + prixBonbon
    Fin Tant que
    Retourner quantitéBonbonAchetable
+Sinon
+   Retourner 0
 Fin si
 
 fin fonction
