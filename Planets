@@ -1,0 +1,72 @@
+wilder@wilder-ThinkPad-T430s:~$ pwd
+/home/wilder
+wilder@wilder-ThinkPad-T430s:~$ cd quetes
+wilder@wilder-ThinkPad-T430s:~/quetes$ cd shell
+wilder@wilder-ThinkPad-T430s:~/quetes/shell$ cd planets
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mkdir real
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mkdir fictional
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mkdir inhabited
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ cd real
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ mkdir telluric
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ mkdir gas-giants
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ mkdir dwarf-planets
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ cd planets
+bash: cd: planets: No such file or directory
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ cd ..
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv mercury.jpeg real/telluric
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv venus.jpeg real/telluricwilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv earth.jpeg real/telluricwilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv mars.jpeg real/telluric
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv jupiter.jpeg real/gas-giants
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv saturn.jpeg real/gas-giants
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv uranus.jpeg real/gas-giants
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv neptune.jpeg real/gas-giants
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv pluto.jpeg real/dwarf-planets
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv arrakis.jpeg fictional
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv coruscant.jpeg fictionalwilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ mv cybertron.jpeg fictionalwilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ cd fictional
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/fictional$ cp arrakis coruscant cybertron ../inhabited
+cp: cannot stat 'arrakis': No such file or directory
+cp: cannot stat 'coruscant': No such file or directory
+cp: cannot stat 'cybertron': No such file or directory
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/fictional$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg ../inhabited
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/fictional$ cd ..
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real/telluric$ cp earth.jpeg ../inhabited
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real/telluric$ cp earth.jpeg ~/inhabited
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real/telluric$ cd ..
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ cd ..
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ cp earth.jpeg /inhabited
+cp: cannot stat 'earth.jpeg': No such file or directory
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ cd real/telluric
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real/telluric$ cp earth.jpeg ../../inhabited
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real/telluric$ cd ..
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ rm -r dwars-planets
+rm: cannot remove 'dwars-planets': No such file or directory
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ rm -r dwarf-planets
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ ^C
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets/real$ 
+
+
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ tree
+.
+├── fictional
+│   ├── arrakis.jpeg
+│   ├── coruscant.jpeg
+│   └── cybertron.jpeg
+├── inhabited
+│   ├── arrakis.jpeg
+│   ├── coruscant.jpeg
+│   ├── cybertron.jpeg
+│   └── earth.jpeg
+└── real
+    ├── gas-giants
+    │   ├── jupiter.jpeg
+    │   ├── neptune.jpeg
+    │   ├── saturn.jpeg
+    │   └── uranus.jpeg
+    └── telluric
+        ├── earth.jpeg
+        ├── mars.jpeg
+        ├── mercury.jpeg
+        └── venus.jpeg
+
+5 directories, 15 files
+wilder@wilder-ThinkPad-T430s:~/quetes/shell/planets$ 
+
