@@ -1,0 +1,5 @@
+  316  wget https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  317  grep France,2019,PHP wilders.csv | wc -l > php_france_2019.csv
+  318  grep JavaScript wilders.csv > javascript.csv
+  319  grep -E '(Biarritz|Toulouse)' javascript.csv > javascript_biarritz_toulouse.csv
+  320  history | tail -n5 > history.txt
